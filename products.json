@@ -1,0 +1,45 @@
+{
+  "products": [
+    {
+      "activeProduct": true,
+      "weightPerUnitOfMeasure": ".000",
+      "listPrice": "$0.00",
+      "selectedMeasurement": "EA",
+      "selectedSupply": "Acne supplies",
+      "productClassSelectedOptionValue": "Bicycles(100)",
+      "id": 1
+    },
+    {
+      "activeProduct": true,
+      "weightPerUnitOfMeasure": ".000",
+      "listPrice": "$0.00",
+      "selectedMeasurement": "EA",
+      "selectedSupply": "Acne supplies",
+      "productClassSelectedOptionValue": "Bicycles(100)",
+      "id": 2
+    },
+    {
+      "activeProduct": true,
+      "weightPerUnitOfMeasure": ".000",
+      "listPrice": "$0.00",
+      "selectedMeasurement": "EA",
+      "selectedSupply": "Acne supplies",
+      "productClassSelectedOptionValue": "Bicycles(100)",
+      "id": 3
+    },
+    {
+      "productNumber": "123",
+      "productDescription": "des",
+      "activeProduct": true,
+      "weightPerUnitOfMeasure": "123",
+      "listPrice": "$111",
+      "selectedMeasurement": "EA",
+      "selectedSupply": "Acne supplies",
+      "countryOfOrigin": "india",
+      "latestRevDate": "2023-02-08",
+      "longDivision": "asdasd",
+      "productClassSelectedOptionValue": "Bicycles(100)",
+      "id": 4
+    }
+  ]
+}

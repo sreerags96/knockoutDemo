@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <script  type="text/javascript"  src="./libs/jquery-1.6.3.min.js"></script>
+    <script  type="text/javascript"  src="./libs/knockout-2.3.0.js"></script>
+    <script type="text/javascript" src="./Scripts/viewModel.js"></script>
+</head>
+
+<body>
+    <div class="columns">
+        <div class="column">
+            <h4>Main Prodcuts</h4>
+            <p>Prodcut number</p>
+            <input type="text" data-bind="value: productNumber" />
+
+
+            <p>Prodcut Description</p>
+            <input type="text" id="commonInput" data-bind="value: productDescription"/>
+
+            <p>Active Prodcut?</p>
+            <div class="check">
+                <label><input type="checkbox" data-bind="checked: activeProduct">yes</label>
+            </div>
+
+            <p>Prodcut class</p>
+            <div>
+                <input type="radio" name="ProdcutClass" value="Bicycles(100)" data-bind="checked: productClassSelectedOptionValue, checkedValue: true"/>
+                <label for="y">Bicycles(100)</label>
+                <input type="radio" name="ProdcutClass" value="Accessories(200)" data-bind="checked: productClassSelectedOptionValue, checkedValue: false"/>
+                <label for="z">Accessories(200)</label>
+                <input type="radio" name="ProdcutClass" value="Clothing(300)"  data-bind="checked: productClassSelectedOptionValue, checkedValue: false"/>
+                <label for="z">Clothing(300)</label>
+            </div>
+
+            <div>
+                <p> Unit of measure</p>
+                <select data-bind="options: unitOfMeasureData, value: selectedMeasurement,  optionsText: 'measurement', optionsValue:'measurement'"></select>
+            </div>
+
+            <div>
+                <p>Suggested vendor</p>
+                <select data-bind="options: suppliesData, value: selectedSupply,  optionsText: 'supplyName', optionsValue:'supplyName'"></select>
+            </div>
+            <br>
+            <br>
+            <input type="button" value="Accept" data-bind="click: addProduct">
+        </div>
+
+        <div class="column2">
+            <p>Weight per unit of measure </p>
+            <input type="text" data-bind="value: weightPerUnitOfMeasure"/>
+
+            <p>List Price</p>
+            <input type="text" data-bind="value: listPrice" />
+
+            <p>country of origin</p>
+            <input type="text" data-bind="value: countryOfOrigin"/>
+
+            <div>
+                <p>Latest revision date</p>
+                <input type="date" data-bind="value: latestRevDate" />
+            </div>
+
+            <div>
+                <p>Long division</p>
+                <textarea name="description" id="" cols="30" rows="10" data-bind="value: longDivision"></textarea>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

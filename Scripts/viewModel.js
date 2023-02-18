@@ -6,20 +6,20 @@ $(document).ready(function(){
         activeProduct,weightPerUnitOfMeasure,listPrice,
         selectedMeasurement, selectedSupply, countryOfOrigin,
         latestRevDate, longDivision, productClassSelectedOptionValue){
-            this.productNumber = productNumber,
-            this.productDescription = productDescription,
-            this.activeProduct = activeProduct,
-            this.weightPerUnitOfMeasure =weightPerUnitOfMeasure,
-            this.listPrice = listPrice,
-            this.selectedMeasurement = selectedMeasurement,
-            this.selectedSupply = selectedSupply,
-            this.countryOfOrigin = countryOfOrigin,
-            this.latestRevDate = latestRevDate,
-            this.longDivision = longDivision,
+            this.productNumber = productNumber
+            this.productDescription = productDescription
+            this.activeProduct = activeProduct
+            this.weightPerUnitOfMeasure = weightPerUnitOfMeasure
+            this.listPrice = listPrice
+            this.selectedMeasurement = selectedMeasurement
+            this.selectedSupply = selectedSupply
+            this.countryOfOrigin = countryOfOrigin
+            this.latestRevDate = latestRevDate
+            this.longDivision = longDivision
             this.productClassSelectedOptionValue = productClassSelectedOptionValue
         }
 
-    var productViewModel = {
+    let productViewModel = {
         URL : "http://localhost:3000/products",
         productNumber: ko.observable(),
         productDescription: ko.observable(),
@@ -35,13 +35,20 @@ $(document).ready(function(){
 
         unitOfMeasureData:[
             {key: 1, measurement: 'EA'},
-            {key: 2, measurement: 'IN'}
+            {key: 2, measurement: 'IN'},
+            {key: 3, measurement: 'CS'},
+            {key: 4, measurement: 'MC'},
+            {key: 5, measurement: 'LG'},
         ],
 
         
         suppliesData:[
             {key: 1, supplyName: 'Acne supplies'},
-            {key: 2, supplyName: 'Hair supplies'}
+            {key: 2, supplyName: 'Hair supplies'},
+            {key: 3, supplyName: 'Cosmetic supplies'},
+            {key: 4, supplyName: 'Food supplies'},
+            {key: 5, supplyName: 'Dye supplies'},
+            {key: 6, supplyName: 'Accessories supplies'},
         ],
 
         addProduct: function() {

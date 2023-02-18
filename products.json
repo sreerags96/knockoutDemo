@@ -40,6 +40,20 @@
       "longDivision": "asdasd",
       "productClassSelectedOptionValue": "Bicycles(100)",
       "id": 4
+    },
+    {
+      "productNumber": "sat",
+      "productDescription": "desc",
+      "activeProduct": true,
+      "weightPerUnitOfMeasure": "100",
+      "listPrice": "223",
+      "selectedMeasurement": "CS",
+      "selectedSupply": "Food supplies",
+      "countryOfOrigin": "ind",
+      "latestRevDate": "2023-02-25",
+      "longDivision": "Div",
+      "productClassSelectedOptionValue": "Clothing(300)",
+      "id": 5
     }
   ]
 }
